@@ -2,14 +2,14 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CS Elétrica</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      color: #222;
+      background: #f5f5f5;
     }
 
     header {
@@ -22,6 +22,12 @@
     header h1 {
       color: #ffc400;
       font-size: 36px;
+      margin: 0;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 18px;
     }
 
     .botao {
@@ -36,21 +42,23 @@
     }
 
     section {
-      padding: 30px 20px;
-      max-width: 900px;
-      margin: auto;
+      padding: 40px 20px;
+      text-align: center;
     }
 
     .servicos {
       display: grid;
-      gap: 15px;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      max-width: 800px;
+      margin: auto;
     }
 
     .card {
       background: white;
       padding: 20px;
       border-radius: 10px;
-      box-shadow: 0 2px 8px #0002;
+      box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
     }
 
     footer {
@@ -59,38 +67,36 @@
       text-align: center;
       padding: 20px;
     }
+
+    @media (max-width: 600px) {
+      .servicos {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
+
 <body>
 
 <header>
   <h1>CS Elétrica</h1>
-  <p>Serviços elétricos residenciais, comerciais e instalação em geral</p>
-  <a class="botao" href="https://wa.me/5548998199501">Chamar no WhatsApp</a>
+  <p>Serviços elétricos com qualidade e segurança</p>
+  <a class="botao" href="https://wa.me/5548998199501">Fale no WhatsApp</a>
 </header>
 
 <section>
-  <h2>Nossos Serviços</h2>
-
+  <h2>Serviços</h2>
   <div class="servicos">
-    <div class="card">⚡ Instalações elétricas</div>
-    <div class="card">💡 Iluminação em gesso e LED</div>
-    <div class="card">📹 Câmeras de segurança</div>
-    <div class="card">❄️ Instalação, manutenção e higienização de ar-condicionado</div>
-    <div class="card">🚪 Portão eletrônico</div>
-    <div class="card">🔌 Quadros elétricos e comandos</div>
+    <div class="card">Instalações elétricas</div>
+    <div class="card">Manutenção residencial</div>
+    <div class="card">Quadro de disjuntores</div>
+    <div class="card">Iluminação e tomadas</div>
   </div>
 </section>
 
 <section>
   <h2>Atendimento</h2>
-  <p>Atendemos Governador Celso Ramos, Biguaçu, Florianópolis e região.</p>
-</section>
-
-<section>
-  <h2>Contato</h2>
-  <p>Solicite seu orçamento pelo WhatsApp:</p>
-  <a class="botao" href="https://wa.me/5548998199501">48998199501</a>
+  <p>Atendemos Governador Celso Ramos e região</p>
 </section>
 
 <footer>
