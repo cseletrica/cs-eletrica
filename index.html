@@ -2,69 +2,100 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>CS Instalações Elétricas</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CS Elétrica</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #0f172a;
+      background: #f4f4f4;
+      color: #222;
+    }
+
+    header {
+      background: #111;
       color: white;
       text-align: center;
+      padding: 40px 20px;
     }
-    header {
-      background: #1e293b;
-      padding: 20px;
+
+    header h1 {
+      color: #ffc400;
+      font-size: 36px;
     }
-    h1 {
-      margin: 0;
-      color: #22c55e;
-    }
-    .container {
-      padding: 20px;
-    }
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
+
+    .botao {
+      background: #25D366;
+      color: white;
       padding: 15px 25px;
-      background: #22c55e;
-      color: black;
       text-decoration: none;
       border-radius: 8px;
       font-weight: bold;
+      display: inline-block;
+      margin-top: 15px;
     }
-    iframe {
-      width: 100%;
-      height: 300px;
-      border: none;
-      margin-top: 20px;
+
+    section {
+      padding: 30px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .servicos {
+      display: grid;
+      gap: 15px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px #0002;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>CS Instalações Elétricas</h1>
-  <p>Qualidade e segurança para sua casa</p>
+  <h1>CS Elétrica</h1>
+  <p>Serviços elétricos residenciais, comerciais e instalação em geral</p>
+  <a class="botao" href="https://wa.me/5548998199501">Chamar no WhatsApp</a>
 </header>
 
-<div class="container">
-  <h2>Serviços</h2>
-  <p>• Instalação de câmeras</p>
-  <p>• Portão eletrônico</p>
-  <p>• Ar-condicionado (instalação, limpeza e manutenção)</p>
-  <p>• Iluminação em gesso</p>
-  <p>• Quadros e comandos elétricos</p>
+<section>
+  <h2>Nossos Serviços</h2>
 
-  <a class="btn" href="https://wa.me/554898199501" target="_blank">
-    Fale no WhatsApp
-  </a>
+  <div class="servicos">
+    <div class="card">⚡ Instalações elétricas</div>
+    <div class="card">💡 Iluminação em gesso e LED</div>
+    <div class="card">📹 Câmeras de segurança</div>
+    <div class="card">❄️ Instalação, manutenção e higienização de ar-condicionado</div>
+    <div class="card">🚪 Portão eletrônico</div>
+    <div class="card">🔌 Quadros elétricos e comandos</div>
+  </div>
+</section>
 
-  <h2>Localização</h2>
-  <iframe 
-    src="https://maps.google.com/maps?q=Governador%20Celso%20Ramos&t=&z=13&ie=UTF8&iwloc=&output=embed">
-  </iframe>
-</div>
+<section>
+  <h2>Atendimento</h2>
+  <p>Atendemos Governador Celso Ramos, Biguaçu, Florianópolis e região.</p>
+</section>
+
+<section>
+  <h2>Contato</h2>
+  <p>Solicite seu orçamento pelo WhatsApp:</p>
+  <a class="botao" href="https://wa.me/5548998199501">48998199501</a>
+</section>
+
+<footer>
+  <p>CS Elétrica © 2026</p>
+</footer>
 
 </body>
 </html>
